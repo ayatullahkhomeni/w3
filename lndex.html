@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 School ak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap off line css -->
+    <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Examples in Each Chapter -->
+    <!-- My First JavaScript -->
+    <main>
+        <Section class="d-flex">
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-primary rounded p-2 w-50">
+                <h2>My First JavaScript</h2>
+
+                <button class="bg-info rounded p-2" id="btn" type="button"
+                    onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.</button>
+
+                <p id="demo"></p>
+            </div>
+            <!-- JavaScript Introduction -->
+            <!-- JavaScript Can Change HTML Content -->
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-success rounded p-2 w-50">
+                <h2>What Can JavaScript Do?</h2>
+                <p id="demo1">JavaScript can change HTML content.</p>
+                <button class="bg-info rounded p-2" id="btn1" type="button"
+                    onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click
+                    Me!</button>
+            </div>
+        </Section>
+        <!-- JavaScript Can Change HTML Attribute Values -->
+        <Section class="d-flex">
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-light rounded p-2 w-50">
+                <h2>What Can JavaScript Do?</h2>
+                <p>JavaScript can change HTML attribute values.</p>
+                <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+                <button class="bg-info rounded p-2" id="btn2"
+                    onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the
+                    light</button>
+                <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+                <button class="bg-info rounded p-2" id="btn3"
+                    onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the
+                    light</button>
+            </div>
+            <!-- JavaScript Can Change HTML Styles (CSS) -->
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-danger rounded p-2 w-50">
+                <h2>What Can JavaScript Do?</h2>
+                <p id="demo2">JavaScript can change the style of an HTML element.</p>
+                <button class="bg-info rounded p-2" id="btn4" type="button"
+                    onclick="document.getElementById('demo2').style.fontSize='35px'">Click
+                    Me!</button>
+            </div>
+        </Section>
+        <!-- JavaScript Can Hide HTML Elements -->
+        <Section class="d-flex">
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-warning rounded p-2 w-50">
+                <h2>What Can JavaScript Do?</h2>
+                <p id="demo3">JavaScript can hide HTML elements.</p>
+                <button class="bg-info rounded p-2" id="btn5" type="button"
+                    onclick="document.getElementById('demo3').style.display='none'">Click
+                    Me!</button>
+            </div>
+            <!-- JavaScript Can Show HTML Elements -->
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-secondary rounded p-2 w-50">
+                <h2>What Can JavaScript Do?</h2>
+                <p>JavaScript can show hidden HTML elements.</p>
+                <p id="demo4" style="display:none">Hello JavaScript!</p>
+                <button class="bg-info rounded p-2" id="btn6" type="button"
+                    onclick="document.getElementById('demo4').style.display='block'">Click
+                    Me!</button>
+            </div>
+        </Section>
+        <Section class="d-flex">
+            <!-- JavaScript Array Reference -->
+            <div class="mt-2 d-flex-row justify-content-center text-center gap-3 bg-light rounded p-2 w-50">
+                <h2>JavaScript Arrays</h2>
+                <p>The Array object is used to store multiple values in a single variable:</p>
+                <p id="emo"></p>
+                <script>
+                    const cars = ["Saab", "Volvo", "BMW"];
+                    document.getElementById("emo").innerHTML = cars;
+                </script>
+            </div>
+            <div>
+
+            </div>
+        </Section>
+        <Section class="d-flex">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </Section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap off line js -->
+    <!-- <script src="bootstrap/bootstrap.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script> -->
+    <script src="js/w3.js"></script>
+</body>
+
+</html>
