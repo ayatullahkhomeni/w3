@@ -103,3 +103,36 @@ search	//Sets or returns the querystring part of a URL
 assign()	//Loads a new document
 reload()	//Reloads the current document
 replace()	//Replaces the current document with a new one
+
+// Window Navigator
+// The Window Navigator Object
+let url1 = window.navigator.language;
+let url2 = navigator.language;
+
+// Navigator Object Properties
+
+appCodeName	//Returns browser code name
+appName	//Returns browser name
+appVersion	//Returns browser version
+cookieEnabled	//Returns true if browser cookies are enabled
+geolocation	//Returns a geolocation object for the user's location
+language	//Returns browser language
+onLine	//Returns true if the browser is online
+platform	//Returns browser platform
+product	//Returns browser engine name
+userAgent	//Returns browser user-agent header
+
+// Navigator Object Methods 
+javaEnabled()	//Returns true if the browser has Java enabled
+taintEnabled()	//Removed in JavaScript version 1.2 (1999).
+
+// Window Screen
+
+// The Window Screen Object
+// Screen Object Properties
+availHeight	//Returns the height of the screen (excluding the Windows Taskbar)
+availWidth	//Returns the width of the screen (excluding the Windows Taskbar)
+colorDepth	//Returns the bit depth of the color palette for displaying images
+height	//Returns the total height of the screen
+pixelDepth	//Returns the color resolution (in bits per pixel) of the screen
+width	//Returns the total width of the screen
